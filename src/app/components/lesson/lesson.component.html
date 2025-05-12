@@ -1,0 +1,11 @@
+<mat-card class="lesson-card"
+  [ngStyle]="{'background-color': lesson.dateBegin < today ? '#ffe5e5' : '#f0f8ff'}">
+  <mat-card-title class="lesson-title">{{ lesson.lessonName }}</mat-card-title>
+  <mat-card-content>
+    <p><strong>Instructor: </strong> {{ lesson.teacherName }}</p>
+    <p><strong>Sessions: </strong> {{ lesson.meetsCount }}</p>
+    <p><strong>Start Date: </strong> {{ lesson.dateBegin | date:'MMMM d, y' }}</p>
+    <p><strong>Price: </strong> ₪{{ lesson.price }}</p>
+    <p><strong>Day: </strong> {{ getDayName(lesson.day) }} | <strong>Time:</strong> {{ lesson.hour }}:00</p>
+  </mat-card-content>
+</mat-card>

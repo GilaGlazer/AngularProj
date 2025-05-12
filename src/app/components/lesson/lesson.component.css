@@ -1,0 +1,18 @@
+.lesson-card {
+    border-radius: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 12px;
+    padding: 16px;
+    transition: transform 0.3s ease;
+}
+
+.lesson-card:hover {
+    transform: scale(1.02);
+}
+
+.lesson-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #2a2a2a;
+    margin-bottom: 10px;
+}

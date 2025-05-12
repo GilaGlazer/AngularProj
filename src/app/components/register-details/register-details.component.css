@@ -1,0 +1,22 @@
+.details-container {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-size: 15px;
+}
+
+.detail-row {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px dashed #ccc;
+    padding-bottom: 4px;
+}
+
+h2 {
+    margin-bottom: 16px;
+    color: #3f51b5;
+}
+
+button {
+    font-weight: bold;
+}
